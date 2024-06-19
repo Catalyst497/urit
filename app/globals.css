@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.regular-white{
+    color: rgba(255, 255, 255, 0.65);
+    font-size: 20px;
+}
+.regular-black{
+    color: #585858;
+    font-size: 20px;
+}
+.h1 {
+    @apply text-[72px] capitalize leading-[87.1px] font-medium;
+}
+.h2 {
+    @apply text-[50px] capitalize font-medium;
+}
+.h3 {
+    @apply text-[25px] capitalize font-medium;
+}
