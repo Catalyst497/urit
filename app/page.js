@@ -3,6 +3,7 @@ import Hero from "./components/Home/Hero";
 import Nav from "./components/Home/Nav";
 import Services from "./components/Home/Services";
 import WhoWeWant from "./components/Home/WhoWeWant";
+import OurReach from "./components/Home/OurReach";
 
 export default function Home() {
   return (
@@ -15,6 +16,7 @@ export default function Home() {
         <Services />
         <WhoWeWant />
       </div>
+      <OurReach />
     </main>
   );
 }

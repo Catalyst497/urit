@@ -1,4 +1,5 @@
 import React from "react";
+import BlackButton from "../BlackButton";
 
 function Services() {
   return (
@@ -14,7 +15,7 @@ function Services() {
             Spruce provides title insurance, coordination <br/> escrow and recording
             services.
           </p>
-          <button className="text-white bg-black px-4 py-2 rounded-[41px]">Learn More</button>
+          <BlackButton/>
         </div>
       </div>
       </div>
