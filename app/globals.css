@@ -10,6 +10,12 @@
     color: #585858;
     font-size: 20px;
 }
+.regular-white h1,h2,h3 {
+ color: white;
+}
+.regular-black h1,h2,h3 {
+ color: black;
+}
 .h1 {
     @apply text-[72px] capitalize leading-[87.1px] font-medium;
 }
