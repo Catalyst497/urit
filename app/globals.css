@@ -2,26 +2,47 @@
 @tailwind components;
 @tailwind utilities;
 
-.regular-white{
-    color: rgba(255, 255, 255, 0.65);
-    font-size: 20px;
+.regular-white {
+  color: rgba(255, 255, 255, 0.65);
+  font-size: 20px;
 }
-.regular-black{
-    color: #585858;
-    font-size: 20px;
+.regular-black {
+  color: #585858;
+  font-size: 20px;
 }
-.regular-white h1,h2,h3 {
- color: white;
+.regular-white .h1 {
+  color: white;
 }
-.regular-black h1,h2,h3 {
- color: black;
+.regular-white .h2 {
+  color: white;
 }
+.regular-white .h3 {
+  color: white;
+}
+.regular-black .h1 {
+  color: black;
+}
+.regular-black .h2 {
+  color: black;
+}
+.regular-black .h3 {
+  color: black;
+}
+
 .h1 {
-    @apply text-[72px] capitalize leading-[87.1px] font-medium;
+  @apply text-[72px] capitalize leading-[87.1px] font-medium;
 }
 .h2 {
-    @apply text-[50px] capitalize font-medium;
+  @apply text-[50px] capitalize font-medium leading-[60px];
 }
 .h3 {
-    @apply text-[25px] capitalize font-medium;
+  @apply text-[25px] capitalize font-medium;
+}
+.primary-text-gradient {
+  background: linear-gradient(to bottom, #4ac5c3aa, #369b95);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.bg-primary-gradient {
+  background: linear-gradient(to bottom, #12595f, #12595f, #0d3e43);
 }
