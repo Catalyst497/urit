@@ -29,12 +29,18 @@ function Hero() {
         </div>
       </div>
 
-      <div className="hero-illustration absolute top-[-6.5rem] right-0 h-[120%] mr-10">
+      <div className="hero-illustration absolute top-[-6.5rem] right-0 h-[120%] mr-10 z-[99]">
         <img
           src="./Hero image.png"
           className="max-w-full max-h-full"
           alt="hero image"
         />
+      </div>
+      <div className='sponsors absolute bottom-0 left-0 right-0 bg-[rgba(0,0,0,0.18)]'>
+        <div className="flex ml-20 gap-36">
+<img src="./logo_maze.svg" alt="logo_maze" />
+<img src="./logo_loom.svg" alt="logo_loom" />
+        </div>
       </div>
     </div>
   );

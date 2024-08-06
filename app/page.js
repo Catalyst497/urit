@@ -14,7 +14,7 @@ export default function Home() {
         <Nav />
         <Hero />
       </div>
-      <div className="services-ati-who-we-want px-8 regular-black ">
+      <div className="services-ati-who-we-want regular-black ">
         <Services />
         <WhoWeWant />
       </div>

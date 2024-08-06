@@ -46,3 +46,23 @@
 .bg-primary-gradient {
   background: linear-gradient(to bottom, #12595f, #12595f, #0d3e43);
 }
+
+
+/* Services styles */
+.services-slide {
+  
+}
+.service-example {
+  max-width: 20rem;
+  @apply bg-white px-8 py-8 rounded-xl;
+  @apply flex flex-col gap-12 shadow-lg;
+}
+.service-example .title {
+  grid-auto-columns: max-content;
+}
+.service-example .title-text {
+  font-weight: 600;
+}
+.service-example p {
+  @apply mt-6 w-[max-content];
+}
