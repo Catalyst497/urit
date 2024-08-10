@@ -1,9 +1,9 @@
 import React from 'react'
 
-function Testmonials() {
+function Testimonials() {
   return (
     <div>
-        <div className="h2">
+        <div className="h2 md:py-16 md:px-20 px-6 py-14 md:pb-[30rem]">
             <div>What They</div>
             <div>Saying About Us</div>
         </div>
@@ -11,4 +11,4 @@ function Testmonials() {
   )
 }
 
-export default Testmonials
+export default Testimonials

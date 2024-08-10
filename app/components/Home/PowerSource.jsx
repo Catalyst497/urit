@@ -1,9 +1,20 @@
-import React from "react";
+import React, {useState, useEffect} from "react";
 import BlackButton from "../BlackButton";
+import useScreenSize from "@/app/hooks/useScreenSize";
 
 function PowerSource() {
+  const { isMobile, isDesktop } = useScreenSize();
+  const [mobileState, setMobileState] = useState(false);
+  const [desktopState, setDesktopState] = useState(false);
+
+  useEffect(() => {
+    setMobileState(isMobile);
+  }, [isMobile]);
+  useEffect(() => {
+    setDesktopState(isDesktop);
+  }, [isDesktop]);
   return (
-    <div className="regular-black flex justify-between px-20 py-16">
+    <div className={`regular-black flex ${isDesktop ? '' : 'flex-col gap-16'} justify-between px-6 md:px-20 py-14 md:py-16`}>
       <div className="flex-1 flex flex-col gap-16">
         <div className="flex flex-col gap-6">
           <div className="h2">
@@ -35,7 +46,9 @@ function PowerSource() {
           <BlackButton />
         </div>
       </div>
-      <div></div>
+      <div>
+        <img src="./woman_calling.png" alt="woman_calling" />
+      </div>
     </div>
   );
 }

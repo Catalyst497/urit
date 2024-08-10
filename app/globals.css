@@ -4,11 +4,11 @@
 
 .regular-white {
   color: rgba(255, 255, 255, 0.65);
-  font-size: 20px;
+  @apply md:text-[20px];
 }
 .regular-black {
   color: #585858;
-  font-size: 20px;
+  @apply md:text-[20px];
 }
 .regular-white .h1 {
   color: white;
@@ -30,13 +30,13 @@
 }
 
 .h1 {
-  @apply text-[72px] capitalize leading-[87.1px] font-medium;
+  @apply text-[3rem] md:text-[72px] capitalize leading-[4rem] md:leading-[87.1px] font-medium;
 }
 .h2 {
-  @apply text-[50px] capitalize font-medium leading-[60px];
+  @apply text-[2.3rem] md:text-[50px] capitalize font-medium leading-[3rem] md:leading-[60px];
 }
 .h3 {
-  @apply text-[25px] capitalize font-medium;
+  @apply text-[1.5rem] md:text-[25px] capitalize font-medium;
 }
 .primary-text-gradient {
   background: linear-gradient(to bottom, #4ac5c3aa, #369b95);
@@ -57,11 +57,20 @@
   @apply bg-white px-8 py-8 rounded-xl;
   @apply flex flex-col gap-12 shadow-lg;
 }
+.service-example.active {
+  @apply bg-gradientLemon;
+}
+.service-example.active .h3 {
+  @apply text-lemon;
+}
 .service-example .title {
   grid-auto-columns: max-content;
 }
 .service-example .title-text {
   font-weight: 600;
+}
+.service-example .service-text {
+  @apply text-black/65;
 }
 .service-example p {
   @apply mt-6 w-[max-content];
